@@ -72,16 +72,16 @@ xml
 ###Manual Downloads
 If you are not using Maven, download the Apache XML Security for Java library from Apache XML Security and include it in your project.
 
-###Java Version
+### Java Version
 Ensure you are using Java 8 or higher.
 
-###Working
-##Signing XML Document:
+### Working
+## Signing XML Document:
 - Run the Main class to launch the GUI.
 - Select the input XML file and specify the output file path.
 - Click the "Sign XML" button to sign the document using a generated key pair.
 The signed XML document will be saved at the specified output file path.
-##Verifying XML Document:
+## Verifying XML Document:
 - Run the Main class to launch the GUI.
 - Select the signed XML file.
 - Click the "Verify XML" button to verify the document's signature using the extracted public key.
