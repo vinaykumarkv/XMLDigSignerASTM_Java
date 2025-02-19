@@ -60,16 +60,16 @@ Ensure the following dependencies are included in your project:
 
 ### Maven Dependencies
 Add the following dependencies to your `pom.xml` if you are using Maven:
-xml
+'''xml
 <dependencies>
     <dependency>
         <groupId>org.apache.santuario</groupId>
         <artifactId>xmlsec</artifactId>
         <version>2.3.0</version>
     </dependency>
-</dependencies>
+</dependencies>'''
 
-###Manual Downloads
+### Manual Downloads
 If you are not using Maven, download the Apache XML Security for Java library from Apache XML Security and include it in your project.
 
 ### Java Version
