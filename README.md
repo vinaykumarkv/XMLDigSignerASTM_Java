@@ -67,7 +67,8 @@ Add the following dependencies to your `pom.xml` if you are using Maven:
         <artifactId>xmlsec</artifactId>
         <version>2.3.0</version>
     </dependency>
-</dependencies>'''
+</dependencies>
+.'''
 
 ### Manual Downloads
 If you are not using Maven, download the Apache XML Security for Java library from Apache XML Security and include it in your project.
