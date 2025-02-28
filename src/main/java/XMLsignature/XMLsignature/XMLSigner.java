@@ -20,7 +20,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
-
+import javax.xml.transform.OutputKeys;
 public class XMLSigner {
 
     static {
@@ -78,6 +78,9 @@ public class XMLSigner {
         // Save the signed document to file
         TransformerFactory tf = TransformerFactory.newInstance();
         Transformer trans = tf.newTransformer();
+     // Set the output properties to include XML declaration
+        trans.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "no");
+        trans.setOutputProperty(OutputKeys.ENCODING, "UTF-8"); // Set the encoding if needed
         trans.transform(new DOMSource(doc), new StreamResult(new FileOutputStream(outputFilePath)));
         System.out.println("XML document signed successfully.");
     }
